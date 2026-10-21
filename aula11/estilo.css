@@ -1,0 +1,135 @@
+/* estilo.css — Cafeteria Grão Dourado
+   Usado por: reserva.html, reserva-formsubmit.html e obrigado.html */
+
+/* Faz width e padding caberem juntos (aula do Box Model) */
+* {
+  box-sizing: border-box;
+}
+
+/* Página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #422b2b;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* Títulos */
+h1 {
+  border-bottom: 4px solid #3936f6;
+  padding-bottom: 8px;
+}
+
+h2 {
+  color: #1a1dc9;
+}
+
+.centro {
+  text-align: center;
+}
+
+/* Grupos do formulário */
+fieldset {
+  background-color: white;
+  border: 2px solid #031cff;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  color: #3e3bff;
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+/* Rótulos: o cursor de mãozinha mostra que clicar no texto marca o campo */
+label {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Campos de texto, data, número, lista e área de texto (class="campo") */
+.campo {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 2px solid #b8c4d6;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campo:hover {
+  border-color: #3936f6;
+}
+
+.campo:focus {
+  border-color: #695ff3;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(47, 0, 255, 0.35);
+}
+
+/* Botões */
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-enviar {
+  background-color: #5b9afa;
+  color: #2b2d42;
+}
+
+.btn-enviar:hover {
+  background-color: #8ed2e7;
+  transform: translateY(-2px);
+}
+
+.btn-limpar {
+  background-color: #e3e7ee;
+  color: #2b2d42;
+}
+
+.btn-limpar:hover {
+  background-color: #cfd6e2;
+}
+
+/* Contorno para quem navega pelo teclado */
+button:focus-visible {
+  outline: 3px solid #c91a1a;
+  outline-offset: 2px;
+}
+
+/* Página de obrigado */
+.destaque {
+  background-color: #ffecec;
+  border-left: 5px solid #f63636;
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+
+code {
+  background-color: #fff1e3;
+  color: #a80707;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+a {
+  color: #c91a1a;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b80909;
+}
